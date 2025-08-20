@@ -788,7 +788,7 @@
             if (localStorage.getItem('__NAME') === tmp1.value || localStorage.getItem('__EMAIL') === tmp1.value) {
                 if (localStorage.getItem('__PASS') === tmp2.value) {
                     localStorage.setItem('__LOGED', 'true');
-                    navigation.navigate('/panel.html')
+                    navigation.navigate('./panel.html')
                 } else {
                     tmp2.style.border = '1px solid tomato'
                     alert('رمز عبور اشتباه می‌باشد')
@@ -800,5 +800,6 @@
         }
     </script>
 </body>
+
 
 </html>
