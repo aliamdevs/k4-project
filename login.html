@@ -629,6 +629,9 @@
     <!-- اسکریپت‌های مورد نیاز -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        if (localStorage.getItem('__LOGED') === 'true') {
+          navigation.navigate('./panel.html');
+        }
         // نمایش/پنهان کردن رمز عبور
         function togglePassword(id) {
             const passwordField = document.getElementById(id);
@@ -803,3 +806,4 @@
 
 
 </html>
+
